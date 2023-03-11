@@ -16,6 +16,7 @@ const deleteStock = (slotNum) => {
 	let slotID = "slot" + slotNum;
 	document.getElementById(slotID).querySelector("#symbol").innerHTML = "Empty";
 	document.getElementById(slotID).querySelector("#price").innerHTML = "Empty";
+	localStorage.removeItem(slotID);
 	
 };
 	
