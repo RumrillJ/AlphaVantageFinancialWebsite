@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alpha Vantage Homepage</title>
+	<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="script.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload = "set();"> 
+	<h1> Alpha Vantage Stock Market Tracker </h1>
+	<div id="search-box">
+		<form id="search-stock">
+		<input type="text" name="symbol" id="search-bar" placeholder="Add / Update Slots Here">
+	
+		<!--<button type= "submit">Search</button>-->
+		</form>
+	</div>
+	<slot id="slot1" class= "slot">		
+		<button id= "addButton" onclick="updateStock(1)"> Add </button>
+		<span id = "hiddenSpan" class="hiddenSpan">
+    		<button id= "delete" onclick = "deleteStock(1)" > Delete Stock</button>
+    		<button id= "update" onclick="updateStock(1)"> Update Stock </button>
+    		<a href="AdvStockInfo.html">
+				<button id= "information"onclick = "currentSlot(1)"> More Info</button>
+			</a>
+		</span>
+		<div id="storage" class="storage">
+				<p id="symbol">Empty</p>
+			<p id="price">Empty</p>
+		</div>
+		</slot>
+	<slot id="slot2" class= "slot">
+		<button id= "addButton" onclick="updateStock(2)"> Add </button>
+			<span id = "hiddenSpan" class="hiddenSpan">
+    		<button id= "delete" onclick = "deleteStock(2)"> Delete Stock </button>
+    		<button id = "update" onclick = "updateStock(2)"> Update Stock </button>
+    		<a href="AdvStockInfo.html">
+				<button id= "information"onclick = "currentSlot(2)"> More Info</button>
+			</a>
+		</span>
+			<div id="storage" class="storage">
+				<p id="symbol">Empty</p>
+			<p id="price">Empty</p>
+		</div>
+	</slot>
+	<slot id="slot3" class= "slot">
+			<button id= "addButton" onclick="updateStock(3)"> Add </button>
+			<span id = "hiddenSpan" class="hiddenSpan">
+    		<button id= "delete"onclick = "deleteStock(3)"> Delete Stock</button>
+    		<button id = "update" onclick = "updateStock(3)" > Update Stock </button>
+    		<a href="AdvStockInfo.html">
+				<button id= "information"onclick = "currentSlot(3)"> More Info</button>
+			</a>
+		</span>
+			<div id="storage" class="storage">
+				<p id="symbol">Empty</p>
+			<p id="price">Empty</p>
+		</div>
+	</slot>
+	<slot id="slot4" class= "slot">
+			<button id= "addButton" onclick="updateStock(4)"> Add </button>
+			<span id = "hiddenSpan" class="hiddenSpan">
+    		<button id= "delete" onclick = "deleteStock(4)"> Delete Stock</button>
+    		<button id= "update"onclick = "updateStock(4)" > Update Stock </button>
+    		<a href="AdvStockInfo.html"">
+				<button id= "information"onclick = "currentSlot(4)"> More Info</button>
+			</a>
+		</span>
+			<div id="storage" class="storage">
+			<p id="symbol">Empty</p>
+			<p id="price">Empty</p>
+		</div>
+	</slot>
+	<slot id="slot5" class= "slot">
+			<button id= "addButton" onclick="updateStock(5)"> Add </button>
+			<span id = "hiddenSpan" class="hiddenSpan">
+    		<button id= "delete"onclick = "deleteStock(5)" > Delete Stock</button>
+    		<button id= "update"onclick = "updateStock(5)" > Update Stock </button>
+    		<a href="AdvStockInfo.html">
+				<button id= "information"onclick = "currentSlot(5)"> More Info</button>
+			</a>
+		</span>
+			<div id="storage" class="storage">
+				<p id="symbol">Empty</p>
+			<p id="price">Empty</p>
+		</div>
+	</slot>
+	<slot id="slot6" class= "slot">
+			<button id= "addButton" onclick="updateStock(6)"> Add </button>
+			<span id = "hiddenSpan" class="hiddenSpan">
+    		<button id= "delete" onclick = "deleteStock(6)"> Delete Stock</button>
+    		<button id= "update" onclick = "updateStock(6)"> Update Stock </button>
+    		<a href="AdvStockInfo.html">
+				<button id= "information"onclick = "currentSlot(6)"> More Info</button>
+			</a>
+		</span>
+			<div id="storage" class="storage">
+				<p id="symbol">Empty</p>
+			<p id="price">Empty</p>
+		</div>
+	</slot>
+	<slot id="slot7" class= "slot">
+			<button id= "addButton" onclick="updateStock(7)"> Add </button>
+			<span id = "hiddenSpan" class="hiddenSpan">
+    		<button id= "delete"onclick = "deleteStock(7)" > Delete Stock</button>
+    		<button id= "update" onclick = "updateStock(7)" > Update Stock </button>
+    		<a href="AdvStockInfo.html">
+				<button id= "information"onclick = "currentSlot(7)"> More Info</button>
+			</a>
+		</span>
+			<div id="storage" class="storage">
+				<p id="symbol">Empty</p>
+			<p id="price">Empty</p>
+		</div>
+	</slot>
+	<slot id="slot8"class= "slot">
+			<button id= "addButton" onclick="updateStock(8)"> Add </button>
+			<span id = "hiddenSpan" class="hiddenSpan">
+    		<button id= "delete"onclick = "deleteStock(8)" > Delete Stock</button>
+    		<button id= "update" onclick = "updateStock(8)"> Update Stock </button>
+    		<a href="AdvStockInfo.html">
+				<button id= "information"onclick = "currentSlot(8)"> More Info</button>
+			</a>
+		</span>
+			<div id="storage" class="storage">
+				<p id="symbol">Empty</p>
+			<p id="price">Empty</p>
+		</div>
+	</slot>
+	<slot id="slot9" class= "slot">
+			<button id= "addButton" onclick="updateStock(9)"> Add </button>
+			<span id = "hiddenSpan" class="hiddenSpan">
+    		<button id= "delete"onclick = "deleteStock(9)" > Delete Stock</button>
+    		<button id= "update"onclick = "updateStock(9)" > Update Stock </button>
+    		<a href="AdvStockInfo.html">
+				<button id= "information"onclick = "currentSlot(9)"> More Info</button>
+			</a>
+		</span>
+			<div id="storage" class="storage">
+				<p id="symbol">Empty</p>
+			<p id="price">Empty</p>
+		</div>
+	</slot>
+	<slot id="slot10" class= "slot">
+			<button id= "addButton" onclick="updateStock(10)"> Add </button>
+			<span id = "hiddenSpan" class="hiddenSpan">
+    		<button id= "delete" onclick = "deleteStock(10)"> Delete Stock</button>
+    		<button id= "update" onclick = "updateStock(10)"> Update Stock </button>
+    		<a href="AdvStockInfo.html">
+				<button id= "information"onclick = "currentSlot(10)"> More Info</button>
+			</a>
+		</span>
+			<div id="storage"class="storage">
+				<p id="symbol">Empty</p>
+			<p id="price">Empty</p>
+		</div>
+	</slot>
+
+
+</body>
+</html>

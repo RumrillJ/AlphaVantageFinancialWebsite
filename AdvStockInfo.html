@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "utf-8">
+	<title>Alpha Vantage Tracker Adv Information</title>
+	<script src="script.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload="util();">
+	<div class="banner">
+	<h1> Alpha Vantage Stock Market Tracker </h1>
+	</div>
+    <a href="index.html">
+      <button id= "Go Back"> Go Back</button>
+    </a>
+
+  <div id="container">
+    <div id="chart"></div>
+  </div>
+            
+<slot id="symbol" class="symbol">
+	<p>Symbol</p>
+</slot>
+<table>
+  <tr>
+    <th>Open</th>
+    <th>Close</th>
+	<th>Current Price</th>
+  </tr>
+  <tr>
+    <td id="open">C</td>
+    <td id="close">H</td>
+    <td id="currentPrice">L</td>
+  </tr>
+  <tr>
+    <th>Beta</th>
+    <th>P/E Ratio</th>
+    <th>Earnings Per Share</th>
+  </tr>
+  <tr>
+    <td id="beta">mC</td>
+    <td id="pe">pe</td>
+    <td id="eps">dY</td>
+  </tr>
+</table>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>
